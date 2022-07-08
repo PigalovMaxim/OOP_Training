@@ -51,9 +51,10 @@ class Plane {
 class MIG extends Plane {
   constructor(name, maxSpeed) {
     super(name, maxSpeed);
+    this.gun = 'Пушка';
   }
   attack() {
-    console.log("Самолёт атаковал");
+    console.log("Самолёт атаковал из " + this.gun);
   }
 }
 class TU extends Plane {
